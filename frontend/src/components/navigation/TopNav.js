@@ -94,7 +94,7 @@ console.log("checkingwebsocket: ",wsCtx.newNotiObj);
                 <div className={styles.menu}>
                     <Link className={styles.lnk} to="/">Home</Link>
                     <Link className={styles.lnk} to="/group">Groups</Link>
-                    {/* <Link className={styles.lnk} to="/messenger">Messenger</Link> */}
+                    <Link className={styles.lnk} to="/messenger">Messenger</Link>
                     <Link className={styles.lnk} to={`/profile/${currUserId}`}>Profile</Link>
                 </div>
 

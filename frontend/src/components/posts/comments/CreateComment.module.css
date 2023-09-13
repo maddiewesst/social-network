@@ -15,15 +15,10 @@
 
 .functions {
     display: flex;
-
-    /* position: absolute;
-    left: 72%; */
+    margin-right: -20px;
 }
 
 .attach {
-      
-    position: absolute;
-    left: 77%;
 }
 
 .send {

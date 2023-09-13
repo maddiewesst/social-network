@@ -92,7 +92,7 @@ function GroupProfile({ groupid }) {
     return <Card className={classes.container}>
         {data.data && data.data.map((group) => (
             <div className={classes.groupContainer} key={group.id} id={group.id}>
-                <div className={classes.img}> <img src={groupimg} ></img> </div>
+                <div className={classes.img}>  </div>
 
                 <div className={classes.wrapper}>
                     <div className={classes.row}>
@@ -106,7 +106,6 @@ function GroupProfile({ groupid }) {
                     </div>
 
                     <div className={classes.description}>{group.description}</div>
-                    {/* <div className={classes.members}>Members</div> */}
                 </div>
                 <Modal
                     open={open}

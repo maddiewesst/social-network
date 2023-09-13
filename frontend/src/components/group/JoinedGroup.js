@@ -14,26 +14,14 @@ function JoinedGroups({ refresh }) {
     const [joinedGroup, setJoinedGroup] = useState()
     const currUserId = localStorage.getItem("user_id");
 
-    
-    
-    // const { error, isLoaded, data } = useGet(`/group-member?userid=${currUserId}`)
-    // // for group members `/group-member?groupid=${groupId}
-    
-    // if (!isLoaded) return <div>Loading...</div>
-    // if (error) return <div>Error: {error.message}</div>
-    
-    
     function handleClick(e) {
         let id = e.target.id
-        // console.log("3690",e)
         if (id == "") {
             id = e.target.parentElement.parentElement.id
         }
         console.log("3690", id)
         navigate("/groupprofile", { state: { id } })
-        
     }
-    
     
     useEffect(() => {
         console.log(jGrpCtx.joinedGrps.length,"sfklsdlflds;")
@@ -65,8 +53,8 @@ function JoinedGroups({ refresh }) {
             {/* {data.data && data.data.map((group) => ( */}
             {jGrpCtx.joinedGrps && jGrpCtx.joinedGrps.map((group) => (
                 <div key={group.id} id={group.id} className={classes.container} onClick={handleClick} >
-                    {/* <div className={classes.img}></div> */}
-                    <div className={classes.groupimg}> <img src={groupimg} ></img> </div>
+                    {/* <img src={groupimg}/ > */}
+                    <div className={classes.groupimg}> <div className={classes.img}></div> </div>
                     <div>
                         <div className={classes.title}>{group.title}</div>
                     </div>

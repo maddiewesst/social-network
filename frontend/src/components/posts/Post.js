@@ -76,15 +76,15 @@ function Post(props) {
 
     let privacy;
     if (props.privacy == 1) {
-        privacy = <div> <img src={lock} alt=''></img> </div>
+        privacy = <div><img src={lock} alt=''></img></div>
     } else if (props.privacy == 2) {
-        privacy = <div> <img src={lockCF} alt=''></img> </div>
+        privacy = <div><img src={lockCF} alt=''></img></div>
     }
 
     return <Card className={classes.container} >
         <div className={classes["author"]}>
             <Link to={`/profile/${props.authorId}`}>
-                <Avatar className={classes["post-avatar"]} id={props.authorId} src={props.avatar} alt="" showStatus={false} height={"50px"} width={"50px"} />
+                <Avatar className={classes["post-avatar"]} id={props.authorId} src={props.avatar} alt="" showStatus={false} height={"40px"} width={"40px"} />
             </Link>
             <div className={classes.column}>
                 <div className={classes.row}>

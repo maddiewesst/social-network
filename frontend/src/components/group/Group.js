@@ -4,8 +4,6 @@ import { JoinedGroupContext } from "../store/joined-group-context";
 import { WebSocketContext } from "../store/websocket-context";
 import { UsersContext } from "../store/users-context";
 import Card from "../UI/Card";
-import SmallButton from "../UI/SmallButton";
-
 import classes from './Group.module.css';
 import { useContext, useEffect, useState } from "react";
 
@@ -13,7 +11,6 @@ function Group(props) {
     const navigate = useNavigate();
 
     const currUserId = localStorage.getItem("user_id");
-    // console.log("curr id", currUserId);
     const [currentlyJoined, setCurrentlyJoined] = useState(false);
     const [requestedToJoin, setRequestedToJoin] = useState(false);
 
@@ -25,12 +22,6 @@ function Group(props) {
         jGrpCtx.getJoinedGrps()
     }, [])
     useEffect(() => {
-        // const storedJoinedGrps = JSON.parse(localStorage.getItem("joined-grps"));
-        // console.log("stored joined-grps (group)", storedJoinedGrps);
-        // check if the current group item is one of the joined Grps in the joinedGrps array
-        // jGrpCtx.getJoinedGrps()
-
-
         jGrpCtx.joinedGrps && setCurrentlyJoined(jGrpCtx.joinedGrps.some(joinedGrp => joinedGrp.id === +props.grpid))
         console.log("fklglfl123", jGrpCtx.joinedGrps)
     }, [jGrpCtx.joinedGrps, props.grpid, props])
