@@ -20,7 +20,7 @@ const SmallAvatar = (props) => {
         }
     },[wsCtx.newOnlineStatusObj.onlineuserids]);
 
-    let defaultImagePath = "default_avatar.jpg";
+    let defaultImagePath = "profile4.svg";
     if (props.avatar!= null){
         defaultImagePath = props.avatar
     }

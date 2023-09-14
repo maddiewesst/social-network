@@ -4,9 +4,8 @@ import styles from "./Avatar.module.css";
 import profile from '../assets/profile.svg'
 
 const Avatar = ({className, id, src, alt, height, width, showStatus}) => {
-    // const onlineStatus = false; // change this
-    const [onlineStatus, setOnlineStatus] = useState(false);
 
+    const [onlineStatus, setOnlineStatus] = useState(false);
     const wsCtx = useContext(WebSocketContext);
 
     useEffect(() => {
@@ -19,7 +18,7 @@ const Avatar = ({className, id, src, alt, height, width, showStatus}) => {
         }
     },[wsCtx.newOnlineStatusObj.onlineuserids]);
 
-    const defaultImagePath = "default_avatar.jpg";
+    const defaultImagePath = "profile4.svg";
     const classes = `${styles["avatar"]} ${className || ""}`;
     return (
         <div className={styles["wrapper"]}>

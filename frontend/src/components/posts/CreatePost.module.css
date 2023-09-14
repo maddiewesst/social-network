@@ -5,13 +5,6 @@
     justify-content: center;
 }
 
-.author {
-    /* display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    align-items: center; */
-}
-
 .topContainer {
     display: flex;
     margin-bottom: 10px;
@@ -57,10 +50,6 @@
     flex-direction: column;
 }
 
-
-
-
-
  .row {
     display: flex;
     justify-content: center;
@@ -86,4 +75,8 @@
 
 .btn {
     margin-left: 20px;
+}
+
+.attach {
+    height: 30px;
 }

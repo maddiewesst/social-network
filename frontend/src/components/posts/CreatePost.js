@@ -70,7 +70,6 @@ function CreatePost(props) {
         </div>
 
         <div className={classes.topContainer}>
-          {/* <div className={classes["author"]}> */}
           <Link to={`/profile/${userId}`}>
             <Avatar
               className={classes["avatar"]}
@@ -82,30 +81,14 @@ function CreatePost(props) {
               width={"40px"}
             />
           </Link>
-          {/* <div className={classes.textareaWrapper}> */}
-          {/* <div>
-            <CreatePostTextarea
-              className={classes.content}
-              placeholder="What's on your mind?"
-              reference={contentInput}
-              rows="3"
-            />
-          </div> */}
+      
           <textarea
             className={classes.content}
             placeholder="What's on your mind?"
             ref={contentInput}
             rows="1"
-          ></textarea>
-          {/* </div> */}
-          {/* <Link to={`/profile/${userId}`} className={classes["author"]}>
-              <div className={classes["details"]}>{`${first} ${last}`}</div>
-            </Link> */}
-          {/* </div> */}
+          />
         </div>
-
-        {/* <div className={classes["content-container"]}> */}
-
         <div className={classes.bottomContainer}>
           <div className={classes.row}>
             <figure>

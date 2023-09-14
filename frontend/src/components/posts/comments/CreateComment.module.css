@@ -9,21 +9,22 @@
     width: 80%;
 }
 
-.input::placeholder {   
-    padding: 8px;
-}
-
 .functions {
     display: flex;
-    margin-right: -20px;
-}
-
-.attach {
+    margin-left: -20px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .send {
     border: none;
     background: none;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .send:hover {
@@ -34,3 +35,20 @@
     position: absolute;
     left: 72%;
 }
+
+textarea {
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    width: 89%;
+    padding: 12px;
+    border-radius: 30px;
+ }
+
+ .attach {
+    margin-left: -50px;
+ }
+
