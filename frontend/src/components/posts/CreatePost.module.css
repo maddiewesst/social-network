@@ -7,6 +7,7 @@
 
 .topContainer {
     display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -17,12 +18,19 @@
 }
 
 .content{
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    /* display: flex;
+
     width: 100%;
-    padding: 12px;
+    padding: 15px;
+    border-radius: 30px; */
+ }
+
+ .content{
     border-radius: 30px;
+    resize: none;
+    width: 100%;
+    padding: 18px;
+    font-family: sans-serif;
  }
 
 .avatar {

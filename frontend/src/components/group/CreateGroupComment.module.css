@@ -6,7 +6,8 @@
 }
 
 .input {
-    width: 80%;
+    width: 90%;
+    border-radius: 30px;
 }
 
 .input::placeholder {
@@ -18,14 +19,12 @@
 
 .functions {
     display: flex;
-    /* position: absolute;
-    left: 75%; */
-    justify-content: flex-end;
-    /* margin-right: 20px; */
+    /* justify-content: flex-end; */
+    margin-left: -54px;
+
+    
 
 }
-
-.attach {}
 
 .send {
     border: none;

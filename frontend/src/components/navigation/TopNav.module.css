@@ -1,6 +1,5 @@
 nav {
     position: fixed;
-    /* width: 100vw; */
     top: 0;
     left: 0;
     right: 0;
@@ -12,8 +11,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* list-style: none; */
-    /* padding: 20px; */
     padding: 0px 20px 0px 20px;
     height: 60px;
     background-color: var(--seasalt);
@@ -96,7 +93,6 @@ nav {
 .notif {
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 
 .logout {

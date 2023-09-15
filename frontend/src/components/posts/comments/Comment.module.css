@@ -35,18 +35,9 @@
     font-weight: 500;
 }
 
-.comment-avatar {
-    /* margin-right: 0.5rem; */
-    /* margin-top: 10px; */
-}
-
 .content {
     margin-top: 10px;
-    /* margin-left: 10px; */
 }
-
-
-
 
 .row {
     display: flex ;
@@ -67,7 +58,7 @@
     min-width: 100px;
 
     background-color: var(--antiflash-white);
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     margin-bottom: 10px;
 

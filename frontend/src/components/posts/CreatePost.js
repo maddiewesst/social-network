@@ -88,6 +88,7 @@ function CreatePost(props) {
             ref={contentInput}
             rows="1"
           />
+          
         </div>
         <div className={classes.bottomContainer}>
           <div className={classes.row}>
