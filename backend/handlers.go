@@ -114,8 +114,7 @@ func Loginhandler() http.HandlerFunc {
 
 		if r.Method == http.MethodPost {
 			fmt.Printf("----login-POST-----\n")
-			var payload loginPayload
-
+			var payload loginPayloadm 
 			err := json.NewDecoder(r.Body).Decode(&payload)
 			if err != nil {
 				fmt.Println("decode prob login")
